@@ -6,8 +6,8 @@ import { GasRefuelMessage } from '../../components/GasMessage';
 import { Routes } from '../../components/Routes';
 import { SelectChainAndToken } from '../../components/SelectChainAndToken';
 import {
-  SendToWallet,
   SendToWalletButton,
+  SendToWalletExpandButton,
 } from '../../components/SendToWallet';
 import { useExpandableVariant } from '../../hooks';
 import { useWidgetConfig } from '../../providers';
@@ -30,12 +30,12 @@ export const MainPage: React.FC = () => {
       <SelectChainAndToken mt={1} mx={3} mb={2} />
       {!nft ? <AmountInput formType="from" mx={3} mb={2} /> : null}
       {!expandable ? <Routes mx={3} mb={2} /> : null}
-      <SendToWallet mx={3} mb={2} />
+      <SendToWalletButton />
       <GasRefuelMessage mx={3} mb={2} />
       <MainGasMessage mx={3} mb={2} />
       <Box display="flex" mx={3} mb={1}>
         <ReviewButton />
-        <SendToWalletButton />
+        <SendToWalletExpandButton />
       </Box>
     </FormContainer>
   );
