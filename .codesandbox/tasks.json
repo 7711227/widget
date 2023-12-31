@@ -1,0 +1,78 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "yarn install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "start": {
+      "name": "start",
+      "command": "yarn start",
+      "runAtStart": true
+    },
+    "build": {
+      "name": "build",
+      "command": "yarn build",
+      "runAtStart": false
+    },
+    "clean": {
+      "name": "clean",
+      "command": "yarn clean",
+      "runAtStart": false
+    },
+    "release": {
+      "name": "release",
+      "command": "yarn release",
+      "runAtStart": false
+    },
+    "release:alpha": {
+      "name": "release:alpha",
+      "command": "yarn release:alpha",
+      "runAtStart": false
+    },
+    "release:beta": {
+      "name": "release:beta",
+      "command": "yarn release:beta",
+      "runAtStart": false
+    },
+    "release:version": {
+      "name": "release:version",
+      "command": "yarn release:version",
+      "runAtStart": false
+    },
+    "release:version:before": {
+      "name": "release:version:before",
+      "command": "yarn release:version:before",
+      "runAtStart": false
+    },
+    "release:version:after": {
+      "name": "release:version:after",
+      "command": "yarn release:version:after",
+      "runAtStart": false
+    },
+    "release:build": {
+      "name": "release:build",
+      "command": "yarn release:build",
+      "runAtStart": false
+    },
+    "release:publish": {
+      "name": "release:publish",
+      "command": "yarn release:publish",
+      "runAtStart": false
+    },
+    "release:publish:alpha": {
+      "name": "release:publish:alpha",
+      "command": "yarn release:publish:alpha",
+      "runAtStart": false
+    },
+    "release:publish:beta": {
+      "name": "release:publish:beta",
+      "command": "yarn release:publish:beta",
+      "runAtStart": false
+    }
+  }
+}
